@@ -12,6 +12,18 @@ class Gdms < Formula
     bin.install_symlink libexec.glob("bin/*")
   end
 
+  def caveats
+    <<~EOS
+      Configure Google authorization, then install the background service:
+        gdms auth
+        gdms install-service
+        gdms install-finder-action
+
+      Run `gdms install-service` again after every Homebrew upgrade so launchd
+      and Finder Quick Actions use the new versioned Cellar path.
+    EOS
+  end
+
   test do
     assert_match "GDMS CLI: #{version}", shell_output("#{bin}/gdms --version")
     assert_match "Usage: gdms COMMAND", shell_output("#{bin}/gdms help")

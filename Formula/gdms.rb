@@ -1,8 +1,8 @@
 class Gdms < Formula
   desc "Synchronize Google Docs/Sheets with local Markdown/CSV files"
   homepage "https://github.com/rsheyd/google-docs-markdown-sync"
-  url "https://github.com/rsheyd/google-docs-markdown-sync/archive/refs/tags/v0.8.11.tar.gz"
-  sha256 "98be8132a65b9cd36fb6c6b2928b0353df1ecbaef6302b4909316a359487605d"
+  url "https://github.com/rsheyd/google-docs-markdown-sync/archive/refs/tags/v0.8.12.tar.gz"
+  sha256 "06d270199452e38527831f70c0cf79695c75239582203b972fe9cacfc5c293f5"
   license "MIT"
 
   depends_on "node"
